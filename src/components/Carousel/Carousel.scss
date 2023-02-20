@@ -1,0 +1,85 @@
+
+.pop-in-container {
+    position: relative;
+    
+    .pop-in {
+        width: 0;
+        height: 100%;
+        background-color: #333;
+        position: absolute;
+        z-index: 1;
+        display: none;
+        opacity: 0.9;
+        transition: width 0s;
+        .movie-title {
+            margin-top: 0 auto;
+            width: 80%;
+            display: none;
+            h2 {
+                margin-left: 8%;
+                margin-top: 10%;
+                text-align: center;
+                color: rgb(84, 248, 84);
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+
+        .movie-desc {
+            margin: 10px auto;
+            align-items: center;
+            justify-content: center;
+            display: none;
+            background-color: #191818;
+            border: 1px solid white;
+            width: 80%;
+            &-item-container {
+                list-style-type: none;
+                background-color: rgb(15, 15, 15);
+                padding: 8%;
+                .movie-desc-item {
+                    color: white;
+                    span {
+                        display: inline-block;
+                        padding: 4%;
+                    }
+                }
+            }
+        }
+        .play-button {
+            align-self: start;
+            width: 30%;
+            margin: 0 auto;
+            display: none;
+            height: 30px;
+            justify-content: start;
+            align-items: center;
+            button {
+                background-color: rgb(72, 205, 72);
+                width: 100%;
+                color: white;
+                height: 100%;
+                border-radius: 5px;
+                border: none;
+                padding: 7%;
+                cursor: pointer;
+                overflow: hidden;
+            }
+        }
+    }
+    &:hover {
+        .pop-in {
+            width: 30%;
+            display: block;
+            .movie-title {
+                display: block;
+            }
+            .movie-desc {
+                display: block;
+            }
+            .play-button {
+                display: flex;
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+$background-color: gray;
+.card-none {
+    padding: 30px 0;
+    display: flex;
+    gap: 3%;
+    flex-wrap: wrap;
+    height: 100%;
+    .carousel-none {
+        margin: 0 auto;
+        width: 65%;
+        height: 550px;
+        background-color: $background-color;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+    &-container {
+        margin-top: 30px;
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        column-gap: 2%;
+        .card-none-content {
+            width: 15%;
+            height: 320px;
+            background-color: $background-color;
+            border-radius: 20px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+    }
+    @keyframes example {
+        0%   {background-color: rgb(158, 155, 155);}
+        25%  {background-color: rgb(115, 114, 114);}
+        50%  {background-color: rgb(85, 84, 84);}
+        100% {background-color: rgb(158, 155, 155);}
+      }
+}
