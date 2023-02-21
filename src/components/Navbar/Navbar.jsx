@@ -1,4 +1,4 @@
-import "./Navbar.scss";
+import './Navbar.scss';
 import { NavLink } from "react-router-dom";
 import { useEffect, useState, useRef, createContext } from "react";
 import axios from "axios";
