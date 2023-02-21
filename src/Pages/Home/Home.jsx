@@ -1,9 +1,8 @@
 import CardProduct from "../../components/CardProduct/CardProduct";
-import CardNone from "../../components/Card-None/CardNone";
+import CardNone from "../../components/Card-None/CardNoneWithoutCarousel";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import "./Home.scss";
-import SwipeableTextMobileStepper from "../../components/Carousel/Carousel";
 import { NavLink } from "react-router-dom";
 
 export default function Home() {
@@ -55,9 +54,6 @@ export default function Home() {
         ) : (
           //data loaded successfully
           <div className="card-container" style={{ margin: 0 }}>
-            <div style={{ paddingTop: "2%" }} className="carousel">
-              <SwipeableTextMobileStepper data={data} />
-            </div>
             {/* Suggestion */}
             <div className="suggestion">
               <div className="suggestion-container">
